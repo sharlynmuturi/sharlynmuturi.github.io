@@ -4703,15 +4703,43 @@ input, select, textarea {
 	    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 	}
 
-	/* Badge styling for tools */
-	.tool-badge {
-	    display: inline-block;
-	    background-color: #f2f2f2;
-	    color: #333;
-	    font-size: 0.85em;
-	    font-weight: 600;
-	    padding: 3px 8px;
-	    margin: 2px 4px 2px 0;
-	    border-radius: 12px;
-	    border: 1px solid #ddd;
-	}
+/* Tools / Tech section styling */
+.tools-section {
+    text-align: center;
+    margin: 2em 0;
+    padding: 1em 0;
+    background-color: #f9f9f9; /* light background to separate visually */
+    border-radius: 10px;
+}
+
+.tools-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 0.8em;
+    color: #222;
+    font-weight: 600;
+}
+
+.tool-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tool-badge {
+    display: inline-block;
+    background-color: #e0f0ff; /* subtle color */
+    color: #0056b3;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 15px;
+    border: 1px solid #cce0ff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tool-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
